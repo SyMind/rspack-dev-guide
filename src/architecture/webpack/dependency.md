@@ -16,7 +16,7 @@ Explain how webpack dependency affects the compilation and what kind of problem 
 ## High-level presentations of *Dependencies*
 
 - [Dependency(fileDependency)](https://webpack.js.org/api/loaders/#thisadddependency): An existing dependency that is marked as watchable. This is the widely-used type of dependency. CSS Preprocessors like `postcss` strongly depend on this in order to mark its dependency watchable.
-- [ContextDependency](https://webpack.js.org/api/loaders/#thisaddcontextdependency): Most useful for requests in which Glob and Regexp were used. For real-world usage, see [[this](https://webpack.js.org/guides/dependency-management/#require-with-expression)](https://webpack.js.org/guides/dependency-management/#require-with-expression).
+- [ContextDependency](https://webpack.js.org/api/loaders/#thisaddcontextdependency): Most useful for requests in which Glob and Regexp were used. For real-world usage, see [this](https://webpack.js.org/guides/dependency-management/#require-with-expression).
 - [MissingDependency](https://webpack.js.org/api/loaders/#thisaddmissingdependency): A missing dependency to mark it watchable (handles the creation of files during compilation before watchers are attached correctly.)
 - [BuildDependency](https://webpack.js.org/configuration/cache/#cachebuilddependencies): Related to persistent cache.
 - PresentationalDependency: Dependencies that only affect presentation are mostly used with their associated template.
